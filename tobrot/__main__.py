@@ -54,43 +54,43 @@ if __name__ == "__main__" :
     #
     incoming_message_handler = MessageHandler(
         incoming_message_f,
-        filters=Filters.command(["leechfile@LeechToFileBot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["leech@LeechoLichBot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_message_handler)
     #
     incoming_purge_message_handler = MessageHandler(
         incoming_purge_message_f,
-        filters=Filters.command(["purgefile@LeechToFileBot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["purge@LeechoLichBot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_purge_message_handler)
     #
     incoming_youtube_dl_handler = MessageHandler(
         incoming_youtube_dl_f,
-        filters=Filters.command(["ytdlfile@LeechToFileBot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["ytdl@LeechoLichBot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_youtube_dl_handler)
     #
     status_message_handler = MessageHandler(
         status_message_f,
-        filters=Filters.command(["statusfile@LeechToFileBot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["status@LeechoLichBot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(status_message_handler)
     #
     cancel_message_handler = MessageHandler(
         cancel_message_f,
-        filters=Filters.command(["cancelfile"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["cancel"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(cancel_message_handler)
     #
     exec_message_handler = MessageHandler(
         exec_message_f,
-        filters=Filters.command(["execfile"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["exec"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(exec_message_handler)
     #
     rename_message_handler = MessageHandler(
         rename_message_f,
-        filters=Filters.command(["renamefile"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["rename"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(rename_message_handler)
     #
@@ -102,7 +102,7 @@ if __name__ == "__main__" :
 
     help_text_handler = MessageHandler(
         help_message_f,
-        filters=Filters.command(["helpfile@LeechToFileBot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["help@LeechoLichBot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(help_text_handler)
     #
@@ -125,13 +125,13 @@ if __name__ == "__main__" :
     #
     save_thumb_nail_handler = MessageHandler(
         save_thumb_nail,
-        filters=Filters.command(["savethumbnailfile@LeechToFileBot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["savethumbnail@LeechoLichBot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(save_thumb_nail_handler)
     #
     clear_thumb_nail_handler = MessageHandler(
         clear_thumb_nail,
-        filters=Filters.command(["clearthumbnailfile@LeechToFileBot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["clearthumbnail@LeechoLichBot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(clear_thumb_nail_handler)
     #
