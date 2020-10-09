@@ -14,9 +14,9 @@
     "youtube-dl",
     "leecher"
   ],
-  "repository": "https://github.com/Spechide/PublicLeech",
-  "success_url": "https://telegram.dog/ThankTelegram",
-  "website": "https://github.com/Spechide/PublicLeech",
+  "repository": "https://github.com/SpEcHiDe/PublicLeech",
+  "website": "https://github.com/SpEcHiDe/PublicLeech",
+  "logo": "https://telegra.ph/file/8b973b270f4f380a427b1.png",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
@@ -69,10 +69,6 @@
       "description": "should be an URL accepting the FormParams {i}, {m}, and {t}",
       "required": false
     },
-    "CUSTOM_FILE_NAME": {
-      "description": "fill with name u want to prefix the file name like ur channel username🙊, keep empty for do nothing, but add to ur config vars even without input",
-      "required": false
-    } 
     "LANG": {
       "description": "Setting the encoding to UTF-8 Dont touch this",
       "value": "C.UTF-8"
