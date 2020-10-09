@@ -14,9 +14,9 @@
     "youtube-dl",
     "leecher"
   ],
-  "repository": "https://github.com/SpEcHiDe/PublicLeech",
+  "repository": "https://github.com/Munalia/PublicLeech",
   "success_url": "https://telegram.dog/ThankTelegram",
-  "website": "https://github.com/SpEcHiDe/PublicLeech",
+  "website": "https://github.com/Munalia/PublicLeech",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
@@ -73,18 +73,12 @@
       "description": "fill with name u want to prefix the file name like ur channel username🙊, keep empty for do nothing, but add to ur config vars even without input",
       "required": false
     } 
+    "LANG": {
+      "description": "Setting the encoding to UTF-8 Dont touch this",
+      "value": "C.UTF-8"
+    }
   },
-  "addons": [
-  ],
-  "buildpacks": [{
-    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-  }, {
-    "url": "https://github.com/akshaychinnan/aria2-heroku"
-  }, {
-    "url": "heroku/python"
-  }, {
-    "url": "https://github.com/akshaychinnan/heroku-buildpack-rarlab"
-  }],
+  "stack": "container",
   "formation": {
     "worker": {
       "quantity": 1,
